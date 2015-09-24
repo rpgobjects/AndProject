@@ -7,4 +7,95 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.rpgobjects.andproject.MainActivity">
 
+    <ImageView
+        android:id="@+id/click_me"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/androidm"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:layout_width="wrap_content" android:textColor="@color/blue"
+        android:layout_height="wrap_content" android:text="click me!!" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:tint="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/click_me"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_local_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:tint="@color/red"
+        android:layout_below="@id/icon1"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_local_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:tint="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/icon2"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_local_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/icon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PNGs"/>
+
+    <ImageView
+        android:id="@+id/svg1"
+        android:tint="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/click_me"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_keyboard"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <ImageView
+        android:id="@+id/svg2"
+        android:tint="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/svg1"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_keyboard"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <ImageView
+        android:id="@+id/svg3"
+        android:tint="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/svg2"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_keyboard"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+<TextView
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/svg3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SVGs"/>
+
 </RelativeLayout>
