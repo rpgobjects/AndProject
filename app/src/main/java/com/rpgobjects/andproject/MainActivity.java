@@ -1,6 +1,8 @@
 package com.rpgobjects.andproject;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @BindColor(R.color.red) int red;
     @BindColor(R.color.blue) int blue;
     @BindColor(R.color.green) int green;
+    @Bind(R.id.two_color) ImageView imageView2Color;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
         DrawableCompat.setTint(svgViewList.get(0).getDrawable(), red);
         DrawableCompat.setTint(svgViewList.get(1).getDrawable(), blue);
         DrawableCompat.setTint(svgViewList.get(2).getDrawable(), green);
+
+        Drawable[] layers = new Drawable[2];
+        layers[0] = getResources().getDrawable(R.drawable.ic_action_favorite);
+        layers[1] = getResources().getDrawable(R.drawable.ic_action_favorite_outline);
+        DrawableCompat.setTint(layers[0],blue);
+        DrawableCompat.setTint(layers[1],red);
+        LayerDrawable layerDrawable = new LayerDrawable(layers);
+        imageView2Color.setImageDrawable(layerDrawable);
+
     }
 
     @OnClick(R.id.click_me)

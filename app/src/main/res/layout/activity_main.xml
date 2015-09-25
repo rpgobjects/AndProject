@@ -91,6 +91,14 @@
         android:layout_width="48dp"
         android:layout_height="48dp" />
 
+    <ImageView
+        android:src="@drawable/ic_action_local_bar"
+        android:id="@+id/two_color"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        />
+
 <TextView
     android:layout_alignParentRight="true"
     android:layout_below="@id/svg3"
